@@ -7,12 +7,6 @@ import { apiFetch } from "../api/trial";
 const API_URL =
   "http://ec2-13-203-74-111.ap-south-1.compute.amazonaws.com:3000";
 
-interface Post {
-  id: number;
-  title: string;
-  body: string;
-}
-
 function App() {
   const [count, setCount] = useState(0);
   const [posts, setPosts] = useState("");
