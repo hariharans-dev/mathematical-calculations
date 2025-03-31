@@ -5,7 +5,7 @@ import "./App.css";
 import { apiFetch } from "../api/trial";
 
 const API_URL =
-  "https://vercel-backend-kige41w24-hariharans-projects-8d5c32b2.vercel.app/";
+  "https://vercel-backend-puce.vercel.app/";
 
 function App() {
   const [count, setCount] = useState(0);
