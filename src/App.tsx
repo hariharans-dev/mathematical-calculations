@@ -5,7 +5,7 @@ import "./App.css";
 import { apiFetch } from "../api/trial";
 
 const API_URL =
-  "http://ec2-13-203-74-111.ap-south-1.compute.amazonaws.com:3000";
+  "https://vercel-backend-kige41w24-hariharans-projects-8d5c32b2.vercel.app/";
 
 function App() {
   const [count, setCount] = useState(0);
