@@ -97,7 +97,10 @@ const Todo = () => {
     if (!todo) return;
     const updatedState = todo.isComplete ? 0 : 1;
     try {
-      await apiputTodo(id, { isComplete: updatedState });
+      await apiputTodo(id, {
+        isComplete: updatedState,
+        completedTime: getFormattedDate(),
+      });
       await getTodoFunc();
     } catch (error) {
       console.error("Error toggling todo:", error);
